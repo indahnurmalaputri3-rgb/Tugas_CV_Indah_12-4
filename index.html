@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae | Indah Nurmala Putri</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #d32f2f;
+            --dark-red: #9a0007;
+            --light-red: #ffcdd2;
+            --bg-gray: #f4f4f4;
+            --text-dark: #333;
+            --text-light: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-gray);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Sidebar Style */
+        .sidebar {
+            flex: 1 1 300px;
+            background-color: var(--primary-red);
+            color: var(--text-light);
+            padding: 40px 30px;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.2);
+            object-fit: cover;
+            margin-bottom: 15px;
+            background-color: var(--dark-red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sidebar h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--light-red);
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .contact-info, .social-media {
+            margin-bottom: 30px;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .info-item strong {
+            display: block;
+            color: var(--light-red);
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        /* Main Content Style */
+        .main-content {
+            flex: 2 1 500px;
+            padding: 40px;
+        }
+
+        .header-title {
+            margin-bottom: 40px;
+        }
+
+        .header-title h1 {
+            font-size: 32px;
+            color: var(--primary-red);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            color: var(--primary-red);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .section-title::after {
+            content: "";
+            flex: 1;
+            height: 2px;
+            background: var(--light-red);
+            margin-left: 15px;
+        }
+
+        .edu-item, .org-item {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid var(--primary-red);
+        }
+
+        .edu-year {
+            font-weight: 600;
+            color: var(--primary-red);
+            font-size: 14px;
+        }
+
+        .skill-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background: var(--primary-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .lang-item {
+            display: flex;
+            justify-content: space-between;
+            max-width: 250px;
+            margin-bottom: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cv-container {
+                flex-direction: column;
+            }
+            .sidebar {
+                padding: 30px 20px;
+            }
+            .main-content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- Sidebar Kiri -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <!-- Placeholder untuk foto diri -->
+                <div class="profile-img">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Indah" alt="Foto Profil Indah" style="width:100%; height:100%; border-radius:50%;">
+                </div>
+                <p style="font-weight: 300; font-style: italic;">"Creative Soul"</p>
+            </div>
+
+            <div class="contact-info">
+                <h2>Kontak</h2>
+                <div class="info-item">
+                    <strong>Tahun Lahir</strong>
+                    24 Juli 2007
+                </div>
+                <div class="info-item">
+                    <strong>Nomor Telepon</strong>
+                    +628812253592
+                </div>
+                <div class="info-item">
+                    <strong>Alamat</strong>
+                    Kp. Babakan mekar Rt 02/ Rw 011
+                </div>
+            </div>
+
+            <div class="social-media">
+                <h2>Media Sosial</h2>
+                <div class="info-item">
+                    <strong>Instagram</strong>
+                    @indahnrmp_
+                </div>
+                <div class="info-item">
+                    <strong>TikTok</strong>
+                    @indahnrmp
+                </div>
+                <div class="info-item">
+                    <strong>Facebook</strong>
+                    -
+                </div>
+            </div>
+
+            <div class="languages">
+                <h2>Bahasa</h2>
+                <div class="lang-item">
+                    <span>Indonesia</span>
+                    <span>●●●●●</span>
+                </div>
+                <div class="lang-item">
+                    <span>B. Inggris</span>
+                    <span>●●●○○</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Konten Utama Kanan -->
+        <main class="main-content">
+            <header class="header-title">
+                <h1>Indah Nurmala Putri</h1>
+                <p style="color: #666; font-size: 18px;">Student & Enthusiast Artist</p>
+            </header>
+
+            <section class="section">
+                <div class="section-title">Tentang Diri</div>
+                <p>Saya adalah seorang pelajar yang memiliki semangat tinggi dalam bidang seni dan kreativitas. Saya sangat menyukai aktivitas <strong>menggambar</strong> untuk mengekspresikan ide, senang mengeksplorasi rasa melalui <strong>memasak</strong>, serta memiliki ketertarikan dalam <strong>menonton film</strong> untuk mencari inspirasi visual dan cerita.</p>
+            </section>
+
+            <section class="section">
+                <div class="section-title">Pendidikan</div>
+                <div class="edu-item">
+                    <div class="edu-year">Lulus Tahun 2026</div>
+                    <strong>SMA KP Baleendah</strong>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-year">Lulus Tahun 2023</div>
+                    <strong>MTSN 7 Tasikmalaya</strong>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-year">Lulus Tahun 2020</div>
+                    <strong>MI Kadupandak</strong>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-title">Keahlian & Hobi</div>
+                <div class="skill-container">
+                    <div class="skill-badge">Menggambar</div>
+                    <div class="skill-badge">Memasak</div>
+                    <div class="skill-badge">Visual Art</div>
+                    <div class="skill-badge">Teamwork</div>
+                </div>
+                <p style="margin-top: 15px; font-size: 14px; color: #666;">Hobi Utama: Menggambar</p>
+            </section>
+
+            <section class="section">
+                <div class="section-title">Pengalaman Organisasi</div>
+                <div class="org-item">
+                    <strong>SMA: Basket</strong>
+                    <p>Aktif dalam kegiatan olahraga tim dan kompetisi antar sekolah.</p>
+                </div>
+                <div class="org-item">
+                    <strong>SMPN: Marchingband</strong>
+                    <p>Mengasah disiplin, koordinasi, dan musikalitas dalam tim besar.</p>
+                </div>
+                <div class="org-item">
+                    <strong>SD: -</strong>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-title">Sertifikat</div>
+                <p>Belum ada sertifikat (Sedang dalam proses pengembangan diri).</p>
+            </section>
+        </main>
+    </div>
+
+    <footer style="text-align: center; margin-top: 30px; color: #888; font-size: 12px; padding-bottom: 20px;">
+        &copy; 2024 Indah Nurmala Putri. Dibuat untuk portofolio GitHub.
+    </footer>
+
+</body>
+</html>
+</body>
+</html>
